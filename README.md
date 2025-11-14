@@ -51,3 +51,26 @@ Ubuntu/Linux/macOS:
 ./run.sh
 
 ```
+
+
+## Note
+
+Since this is a personal API key, publishing it on GitHub may cause it to be revoked.
+Please manually generate a new API key by visiting:
+```
+https://console.groq.com/keys
+
+```
+
+After generating the key, update your project configuration in:
+
+```
+constant/constant.py
+```
+
+Inside the ProjectConstant class, set:
+
+```
+class ProjectConstant:
+    GROQ_API_KEY = "your_new_groq_api_key_here"
+```
