@@ -2,7 +2,7 @@
 class ProjectConstant:
     SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
     DOWNLOAD_FOLDER = 'downloads'
-    GROQ_API_KEY='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'
+    GROQ_API_KEY='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'    #<------- update your key here 
     GOOGLE_CREDENTIALS_BASE64='''eyJpbnN0YWxsZWQiOiB7ImNsaWVudF9pZCI6ICI3NDc5MDY3NDgwOTQtbm5xOG5zcWczcnBqdnM5NDh0aTljdDRvYnJ1c210cTAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCAicHJvamVjdF9pZCI6ICJ0ZXN0LXByb2plY3QtNDU5
 MjE3IiwgImF1dGhfdXJpIjogImh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9vL29hdXRoMi9hdXRoIiwgInRva2VuX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsICJhdXRoX3Byb3ZpZGVyX3g1MDlf
 Y2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwgImNsaWVudF9zZWNyZXQiOiAiR09DU1BYLVd0THBtd25SRnZkOFJHT1lkMTNoV0pCcVdVNW0iLCAicmVkaXJlY3RfdXJpcyI6IFsiaHR0cDovL2xvY2FsaG9zdCJdfX0='''

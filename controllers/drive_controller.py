@@ -3,7 +3,7 @@ from io import BytesIO
 from flask import send_file
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
-from flask import Blueprint, redirect, url_for, session, request, render_template
+from flask import Blueprint, redirect, url_for, session, request, render_template,flash
 from google_auth_oauthlib.flow import Flow
 from google.oauth2.credentials import Credentials
 from services.drive_service import list_files, download_file_content
@@ -54,8 +54,14 @@ def list_drive_files():
 
 @drive_bp.route('/summarize', methods=['POST'])
 def summarize():
-    # file_ids = request.form.getlist('file_ids')
     file_ids = request.form.get('file_ids', '').split(',')
+
+    # Remove empty strings (occurs when no files selected)
+    file_ids = [f for f in file_ids if f.strip()]
+
+    if not file_ids:
+        flash("No File(s) Selected", "error")
+        return redirect(url_for('drive.summarize'))   # <-- your page that shows file list
 
     creds = Credentials(**session['creds'])
     summaries = []
@@ -67,8 +73,7 @@ def summarize():
 
     session['summaries'] = summaries
     flag=True
-    return render_template('summarize.html', summaries=summaries,flag=flag)
-
+    return render_template('summarize.html', summaries=summaries, flag=flag)
 @drive_bp.route('/summaries')
 def show_summaries():
     summaries = session.get('summaries')

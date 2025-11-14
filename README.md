@@ -13,8 +13,8 @@ Follow the steps below to set up and run the project on your local machine.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Roddur114/tech-assignment.git
-cd tech-assignment
+git https://github.com/Roddur114/tech-exactly-assignment.git
+cd tech-exactly-assignment
 ```
 
 2️⃣ Create a Virtual Environment
