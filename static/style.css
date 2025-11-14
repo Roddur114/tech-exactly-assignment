@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+button, .btn {
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #00acc1;
+}
+
+.btn-success {
+    background-color: #00e676;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #00c853;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #673ab7;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 30px auto;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #9575cd;
+}
+
+.table {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    vertical-align: middle;
+    color:#fff;
+}
+
+.table th {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+@keyframes fadeInTable {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table tr {
+    animation: fadeInTable 0.6s ease-in-out;
+}
+
+/* File Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.document-icon {
+    width: 64px;
+    margin-bottom: 1rem;
+}
+
+.form-check-input:checked {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+/* File Card Alternative Styling */
+.file-card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.file-card:hover {
+    border-color: #ccc;
+    background-color: #f1f1f1;
+}
+
+.file-card.selected {
+    border-color: #28a745;
+    background: linear-gradient(145deg, #e6ffe6, #ccffcc);
+}
+
+.file-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+}
+
+.file-name {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    color: #000;
+}
+.selectable-card {
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.selectable-card.active {
+    background-color: #424059;
+    border-color: #1d1787;
+    box-shadow: 0 0 10px rgba(25, 135, 84, 0.3);
+}

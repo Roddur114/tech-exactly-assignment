@@ -1,0 +1,6 @@
+venv
+downloads/
+test.zip
+.idea
+.env
+
